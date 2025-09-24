@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Busqueda de personaje por barra" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-24T06:09:22" hostname="DANA-CHAPARRO" time="29.606">
+  <properties/>
+  <testcase name="Busqueda exitosa de un personaje" classname="Busqueda de personaje por barra" time="29.606"/>
+  <system-out><![CDATA[
+Escenario: Busqueda exitosa de un personaje                                                ?[90m# src/test/resources/features/busqueda_personaje_barra.feature:10?[0m
+  ?[32mDado ?[0m?[32mque el usuario ha iniciado sesion con usuario ?[0m?[32m?[1m"dana@test.com"?[0m?[32m y contrasena ?[0m?[32m?[1m"123456"?[0m ?[90m# com.pragma.marvel.stepdefinition.LoginGStepDefinition.usuarioHaIniciadoSesion(java.lang.String,java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mel usuario busca el personaje ?[0m?[32m?[1m"aqua"?[0m                                              ?[90m# com.pragma.marvel.stepdefinition.BusquedaPersonajeBarraStepDefinition.elUsuarioBuscaElPersonaje(java.lang.String)?[0m
+  ?[32mEntonces ?[0m?[32mel usuario ve los personajes buscados?[0m                                           ?[90m# com.pragma.marvel.stepdefinition.BusquedaPersonajeBarraStepDefinition.elUsuarioVeLosPersonajesBuscados()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

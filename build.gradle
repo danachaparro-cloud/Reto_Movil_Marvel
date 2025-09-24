@@ -1,0 +1,47 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'eclipse'
+}
+
+group = 'com.pragma.marvel'
+version = '1.0-SNAPSHOT'
+compileJava {
+    sourceCompatibility = '11'
+    targetCompatibility = '11'
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    serenityVersion = '4.1.13'
+    appiumVersion = '8.3.0'
+    junitVersion = '4.13.2'
+}
+
+dependencies {
+    // Serenity BDD
+    testImplementation "net.serenity-bdd:serenity-core:$serenityVersion"
+    testImplementation "net.serenity-bdd:serenity-screenplay:$serenityVersion"
+    testImplementation "net.serenity-bdd:serenity-screenplay-webdriver:$serenityVersion"
+    testImplementation "net.serenity-bdd:serenity-junit:$serenityVersion"
+    testImplementation "net.serenity-bdd:serenity-cucumber:$serenityVersion"
+    testImplementation "net.serenity-bdd:serenity-ensure:$serenityVersion"
+    testImplementation "org.seleniumhq.selenium:selenium-java:4.21.0"
+
+    // Appium
+    testImplementation "io.appium:java-client:$appiumVersion"
+
+    // JUnit
+    testImplementation "junit:junit:$junitVersion"
+}
+
+
+test {
+    useJUnit()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
