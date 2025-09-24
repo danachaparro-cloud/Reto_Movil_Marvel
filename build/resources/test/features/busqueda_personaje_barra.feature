@@ -10,3 +10,7 @@ Característica: Busqueda de personaje por barra
   Escenario: Busqueda exitosa de un personaje
     Cuando el usuario busca el personaje "aqua"
     Entonces el usuario ve los personajes buscados
+
+  Escenario: Personaje no existe
+    Cuando el usuario busca el personaje "capitan"
+    Entonces el usuario ve que el personaje no existe

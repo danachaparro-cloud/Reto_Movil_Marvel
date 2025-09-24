@@ -9,16 +9,16 @@ import static com.pragma.marvel.ui.HomePage.BARRA_BUSQUEDA;
 import static com.pragma.marvel.ui.HomePage.BOTON_BUSCAR;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class BuscarPersonajeBarra implements Task {
+public class BuscarPersonajesListas implements Task {
 
     private final String nombrePersonaje;
 
-    public BuscarPersonajeBarra(String nombrePersonaje) {
+    public BuscarPersonajesListas(String nombrePersonaje) {
         this.nombrePersonaje = nombrePersonaje;
     }
 
-    public static BuscarPersonajeBarra conNombre(String nombrePersonaje) {
-        return instrumented(BuscarPersonajeBarra.class, nombrePersonaje);
+    public static BuscarPersonajesListas conNombre(String nombrePersonaje) {
+        return instrumented(BuscarPersonajesListas.class, nombrePersonaje);
     }
 
     @Override

@@ -10,5 +10,5 @@ import org.junit.runner.RunWith;
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         plugin = {"pretty"}
 )
-public class BuscarPersonajeBarraRunner {
+public class BuscarPersonajesListaRunner {
 }

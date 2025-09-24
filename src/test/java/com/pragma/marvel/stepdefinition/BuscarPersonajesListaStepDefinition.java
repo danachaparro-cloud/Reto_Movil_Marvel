@@ -1,7 +1,7 @@
 package com.pragma.marvel.stepdefinition;
 
 import com.pragma.marvel.questions.PersonajeEsVisible;
-import com.pragma.marvel.tasks.BuscarPersonajeBarra;
+import com.pragma.marvel.tasks.BuscarPersonajesListas;
 import com.pragma.marvel.ui.HomePage;
 import io.cucumber.java.Before;
 import io.cucumber.java.es.Cuando;
@@ -12,7 +12,7 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.Matchers.is;
 
 
-public class BusquedaPersonajeBarraStepDefinition {
+public class BuscarPersonajesListaStepDefinition {
 
     @Before
     public void setStage() {
@@ -22,7 +22,7 @@ public class BusquedaPersonajeBarraStepDefinition {
     @Cuando("el usuario busca el personaje {string}")
     public void elUsuarioBuscaElPersonaje(String nombrePersonaje) {
         OnStage.theActorInTheSpotlight().attemptsTo(
-                BuscarPersonajeBarra.conNombre(nombrePersonaje)
+                BuscarPersonajesListas.conNombre(nombrePersonaje)
         );
     }
 
